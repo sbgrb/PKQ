@@ -1,14 +1,22 @@
-const string = `
-.skin *{margin: 0;padding: 0;box-sizing: border-box;}
-.skin *::before{box-sizing: border-box;}
-.skin *::after{box-sizing: border-box;}
+const string = ` 
+/*
+下面画一个皮卡丘  
+*/
+.skin *{margin: 0;padding: 0;box-sizing: border-box}
+.skin *::before{box-sizing: border-box}
+.skin *::after{box-sizing: border-box}
 
+/*
+画皮卡丘的肤色
+*/
 .skin{
     background: #ffe600;
     min-height: 100vh;
     position: relative;
 }
-
+/*
+画皮卡丘的鼻子
+*/
 .nose{
     border: 10px solid black;
     border-color: black transparent transparent;
@@ -47,6 +55,9 @@ const string = `
     transform-origin: center bottom;
     animation: wave 300ms infinite linear;
 }
+/*
+画皮卡丘的眼睛  
+*/
 .eye{
     border: 2px solid black;
     position: absolute;
@@ -76,6 +87,10 @@ const string = `
 .eye.right{
     transform: translateX(100px);
 }
+
+/*
+画皮卡丘的嘴巴
+*/
 
 .mouth{
     width: 200px;
@@ -145,6 +160,10 @@ const string = `
     background: #ff485f;
     border-radius: 100px;
 }
+
+/*
+最后画皮卡丘的脸
+*/
 
 .face{
     position: absolute;

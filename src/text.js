@@ -2,12 +2,12 @@ import string from './css.js'
 
 const player ={
     id : undefined,
-    n  : 1,
     time : 100,
     ui : {
         demo  : document.querySelector('#demo'),
         demo2  : document.querySelector('#demo2')
     },
+    n:1,    
     init :() =>{
         player.ui.demo.innerHTML = string.substr(0,player.n)
         player.ui.demo2.innerText = string.substr(0,player.n)
